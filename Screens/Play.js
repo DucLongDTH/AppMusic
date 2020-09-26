@@ -1,15 +1,26 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Dimensions , Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
+import TrackPlayer from 'react-native-track-player';
 function Play() {
 	const navigation = useNavigation();
 	return (
 		<View style={styles.container}>
-				<View style={styles.header}>
-					<Image source={require('../src/Logo.png')} style={styles.logo} />
-					<Text style={styles.textheader}> N&N Music</Text>
+			<View style={styles.header}>
+				<Image source={require('../src/Logo.png')} style={styles.logo} />
+				<Text style={styles.textheader}> N&N Music</Text>
+			</View>
+			<View>
+				{/* View Imge + Text */}
+				<View>
+					<Image />
+					<Text></Text>
 				</View>
+				{/* View Button */}
+				<View>
+
+				</View>
+			</View>
 		</View>
 	);
 }

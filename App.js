@@ -2,6 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import TrackPlayer from 'react-native-track-player';
 import List from './Screens/List.js';
 import Play from './Screens/Play.js';
 const Tab = createBottomTabNavigator();
@@ -43,4 +44,5 @@ function App() {
 		</NavigationContainer>
 	);
 }
+TrackPlayer.registerPlaybackService(() => require('./service.js'));
 export default App ;
