@@ -2,8 +2,8 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import List from './Screens/List.js'
-import Play from './Screens/Play.js'
+import List from './Screens/List.js';
+import Play from './Screens/Play.js';
 const Tab = createBottomTabNavigator();
 function App() {
 	return (
@@ -15,7 +15,7 @@ function App() {
 					showLabel: false,
 					style: {
 						backgroundColor: 'black',
-            height: 60,
+						height: 60,
 					},
 				}}
 			>
@@ -43,4 +43,4 @@ function App() {
 		</NavigationContainer>
 	);
 }
-export default App;
+export default App ;
